@@ -25,6 +25,6 @@ main h1, main section a, p {
     color: yellow;
     font-family: 'Blinker', sans-serif;
 }
-p {
+a {
     font-size: larger;
 }
