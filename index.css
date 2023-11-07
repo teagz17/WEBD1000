@@ -21,7 +21,10 @@ nav ul li {
     margin-left: auto;
     margin-right: auto;
 }
-main section h1, main section a {
+main h1, main section a, p {
     color: yellow;
     font-family: 'Blinker', sans-serif;
+}
+p {
+    font-size: larger;
 }
