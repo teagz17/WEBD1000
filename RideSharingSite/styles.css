@@ -1,0 +1,15 @@
+
+body{
+    background-color: #e3f2fd;
+}
+header, footer{
+    background-color: #004477;
+    color: white;
+}
+header h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+nav{
+    background-color: #1B5C8C;
+}

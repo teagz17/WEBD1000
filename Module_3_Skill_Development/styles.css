@@ -1,0 +1,28 @@
+/*Teagan Stewart
+    w0302952
+    WEBD1000
+    November 28th, 2023
+    Skills Development Exercise
+    HTML and CSS
+*/
+#myDiv {
+    margin: 16px;
+    border: 8px solid black;
+}
+
+#myDiv3 {
+    color: cadetblue;
+    border: 1px;
+    border-style: solid;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.myDiv4 {
+    width: 180px;
+    height: 180px;
+    margin: 16px;
+    padding: 16px;
+    border: 2px;
+    border-style: solid;
+    border-color: blue;
+}
