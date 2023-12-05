@@ -1,11 +1,87 @@
+<!--Teagan Stewart
+    w0302952
+    WEBD1000
+    November 28th, 2023
+    Skills Development Exercise
+    HTML and CSS
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="UTF-8">
-		<title>bomboclaat</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta charset="UTF-8">
+	    <title>HTML and CSS Skills Development</title>
+        <style>
+            .myDiv2 {
+                background-color: lightgrey;
+                padding: 16px;
+            }
+        </style>
+        <link href="w0302952-WEBD1000-HTML-CSS-Skills-Development.css" rel="stylesheet" type="text/css">
 	</head>
-	<body>
-        <h1>bomboclaat</h1>
+
+    
+    <body>
+    <header>
+        <h1>HTML and CSS Skills Development</h1>
+        <nav class="navbar">
+            <div class="nav-container">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Link 3</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--exercise: inline styles-->
+        <div style="color: #6161ff; font-size: 64px;">
+            This is a div with inline styles.
+        </div>
+        <!--exercise: external styles-->
+        <div id="myDiv">
+            This is a div with external css.
+        </div>
+        <!--exercise: internal styles-->
+        <div class="myDiv2">
+            this is a div with internal css.
+        </div>
+        <!--exercise: selectors and descendants-->
+        <div id="myDiv3">
+            this is a <span>blue div</span> with external style sheet.
+        </div>
+        <!--exercise: box model-->
+        <div class="myDiv4"> </div>
+            <div id="myDiv5" class="flex-container">
+        </div>
+        <!--exercise: flexbox-->
+        <div>these are 3 horizontal div elements within a div container.</div>
+        <div id="myDiv6" class="flex-container">
+            <div id="child1" class="flex-container"></div>
+            <div id="child2" class="flex-container"></div>
+            <div id="child3" class="flex-container"></div>
+        </div>
+        <!--exercise: positioning-->
+        <div>these are 2 div elements inside a div element with relative and absolute positioning.</div>
+        <div id="myDiv7" class="flex-container">
+            <div id="child4" class="flex-container"></div>
+            <div id="child5" class="flex-container"></div>
+        </div>
+        <!--exercise: transitions-->
+        <div>this is a button with a transitioning effect.</div>
+        <button>click me</button>
+    </main>
+    <footer>
+        <!--exercise: responsive design-->
+        <div id="myDiv8">this div will disappear when the screen is too small.</div>
+    </footer>
 	</body>
 </html>

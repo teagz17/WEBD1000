@@ -1,0 +1,149 @@
+/*Teagan Stewart
+    w0302952
+    WEBD1000
+    November 28th, 2023
+    Skills Development Exercise
+    HTML and CSS
+*/
+body{
+    background-color: antiquewhite;
+}
+/* exercise: external styles*/
+#myDiv {
+    margin: 16px;
+    border: 8px solid black;
+}
+/*exercise: selectors and descendants*/
+#myDiv3 {
+    border: 1px;
+    padding: 8px;
+    border-style: solid;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+span {
+    color: blue;
+    text-decoration:overline;
+}
+/*exercise: box model*/
+.myDiv4 {
+    width: 180px;
+    height: 180px;
+    margin: 16px;
+    padding: 16px;
+    border: 2px;
+    border-style: solid;
+    border-color: blue;
+}
+/*exercise: flexbox*/
+#myDiv6{ 
+    width: 180px;
+    height: 60px;
+    margin: 16px;
+    padding: 16px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    display: inline-flex;
+}
+#child1 {
+    width: 60px;
+    height: 60px;
+    background-color: deepskyblue;
+}
+#child2 {
+    width: 60px;
+    height: 60px;
+    background-color: greenyellow;
+}
+#child3 {
+    width: 60px;
+    height: 60px;
+    background-color: tomato;
+}
+/*exercise: positioning*/
+#myDiv7 {
+    width: 90px;
+    height: 180px;
+    margin: 16px;
+    padding: 16px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+}
+#child4 {
+    background-color: yellow;
+    width: 90px;
+    height: 90px;
+    position: relative;
+}
+#child5 {
+    background-color: aqua;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+}
+/*exercise: transitions*/
+button {
+    color:white;
+    font-size: large;
+    background-color: #287233;
+    width: 90px;
+    height: 30px;
+}
+button:hover, button.active {
+    background-color: #4efc68;
+    color: black;
+    transition: .5s ease-in-out;
+}
+/*exercise 10: css variables*/
+:root{
+    --pblue: #606E8C;
+    --transwhite: rgba(255,255,255,.7);
+}
+/*exercise 9: responsive design*/
+header {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+header{
+    background-color: var(--transwhite);
+    border-radius: 20px;
+}
+.nav-container{
+    border-radius: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline;
+}
+.navbar-nav{
+    list-style: none;
+}
+.nav-item{
+    display: inline;
+    font-size: x-large;
+    font-weight: 400;
+}
+#myDiv8{
+    color: white;
+    background-color: var(--pblue);
+    font-size: large;
+    margin-top: 20px;
+}
+@media screen and (max-width: 600px) {
+    div#myDiv8 {
+      display: none;
+    }
+}
+@media only screen and (min-width: 601px) {
+    li.nav-item {
+      padding: 50px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    li.nav-item {
+      padding: 20px;
+    }
+}
+footer{
+    background-color: black;
+}
