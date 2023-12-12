@@ -1,0 +1,241 @@
+/*
+    Teagan Stewart
+    w0302952
+    WEBD1000
+    Creating a Personal Portfolio Page
+    Timed In-class Assignment
+    12-12-2023
+*/
+@import url('https://fonts.cdnfonts.com/css/sofia-sans');
+html {
+    background-image: radial-gradient(circle, rgba(34,193,195,1) 30%, rgba(253,187,45,1) 100%);
+    background-attachment: fixed;
+}
+/* header */
+header h1{
+    font-family: 'Sofia Sans';
+    text-align: center;
+}
+.nav-container{
+    border-radius: 50px;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255,255,255,0.9);
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+}
+.navbar-nav{
+    display:inline-flex;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav-logo{
+    width: fit-content;
+    position: absolute;
+    left: 0px;
+    display: flex;
+    padding: 24px;
+}
+.nav-logo img{
+    display: flex;
+    width: 64px;
+    height: 76px;
+}
+.nav-item{
+    font-size:x-large;
+    list-style: none;
+    display: inline;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav-item a{ 
+    color: black;
+    font-family: 'Sofia Sans';
+    text-decoration: none;
+    font-weight: 500;
+    position:relative
+}
+.nav-logo2{
+    width: fit-content;
+    position: absolute;
+    right: 0px;
+    padding: 24px;
+    display: flex;
+}
+.nav-logo2 img{
+    display: flex;
+    width: 64px;
+    height: 76px;
+}
+/* main */
+.main{
+    margin: 15px;
+    margin-bottom: 125px;
+  }
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+} 
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+.column1 {
+    background-color: rgba(255,255,255,0.9);
+    height: 100%;
+    border-radius: 50px;
+    margin: 24px;
+}
+.paragraph{
+    padding: 50px;
+    font-size: x-large;
+    font-family: 'Sofia Sans';
+}
+.column2 {
+    background-color: rgba(255,255,255,0.9);
+    height: fit-content;
+    border-radius: 50px;
+    margin: 24px;
+}
+.projects{
+    padding: 50px;
+    font-family: 'Sofia Sans';
+}
+/* link effects */
+.main-link, .projects p{
+    font-size: x-large;
+}
+.nav-link:hover, .nav-link.active{
+    color: #0F0F0F
+}
+.nav-link::before{
+    content:"";
+    position:absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: black;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+.nav-link:hover::before{
+    width: 100%;
+    visibility: visible;
+}
+.main-link{
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
+    position: relative;
+}
+.main-link:hover, .main-link.active{
+    color: #0f0f0f;
+}
+.main-link::before{
+    content:"";
+    position:absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: black;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+.main-link:hover::before{
+    width: 100%;
+    visibility: visible;
+}
+/* footer */
+.footer{
+    width: 100%;
+    background-color: rgba(255,255,255,0.9);
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    font-family: 'Sofia Sans';
+    text-align: center;
+}
+.footer-list{
+    list-style: none;
+    padding: 24px;
+}
+.footer-list li{
+    display: inline;
+    padding: 50px
+}
+.footer a{
+    color: black;
+}
+/* nav for small screens */
+.nav-mobile{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav-drop{
+    display: none;
+    color: black;
+    font-size: x-large;
+    font-family: 'Sofia Sans';
+    background-color: rgba(255,255,255,0);
+    padding: 16px;
+    margin-left: 24px;
+    font-size: 24px;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer
+}
+.nav-drop-content{
+    display: none;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.9);
+    list-style: none;
+    border-radius: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav-drop-content a{
+    display: block;
+    justify-self: center;
+    color: black;
+    font-family: 'Sofia Sans';
+    font-size: 24px;
+    text-decoration: none;
+    padding: 12px 16px;
+}
+button:hover, .nav-drop-content a:hover{
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 24px;
+}
+.nav-mobile:hover .nav-drop-content{
+    display: block;
+}
+/* rules for small screens */
+@media screen and (max-width: 760px){
+    .navbar-nav{
+        display: none;
+    }
+    .nav-mobile{
+        display: inline-block
+    }
+    .nav-drop{
+        display: block;
+    }
+    .footer-list li{
+        padding: 20px
+    }
+}
